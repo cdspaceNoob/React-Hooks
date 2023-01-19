@@ -5,12 +5,12 @@ import Home from './components/Home/Home';
 import MainHeader from './components/MainHeader/MainHeader';
 
 function App() {
-  console.log("App() RUN");
+  // console.log("App() RUN");
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    console.log("useEffect() RUN");
+    // console.log("useEffect() RUN");
     const storedUserLoggedInInformation = localStorage.getItem("isLoggedIn");
     if (storedUserLoggedInInformation === "1") {
       setIsLoggedIn(true);
